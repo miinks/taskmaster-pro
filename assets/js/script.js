@@ -91,9 +91,9 @@ $("#remove-tasks").on("click", function() {
   saveTasks();
 
   $(".list-group").on("click", "p", function() {
-    console.log("<p> was clicked");
+    console.log(this);
   });
-  
+
 });
 
 // load tasks for the first time
