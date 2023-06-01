@@ -91,7 +91,14 @@ $("#remove-tasks").on("click", function() {
   saveTasks();
 
   $(".list-group").on("click", "p", function() {
-    console.log(this);
+    var text = $(this)
+    var textInput = $("<textarea>")
+  .addClass("form-control")
+  $(this).replaceWith(textInput);
+
+  .val(text);
+      .text()
+      .trim();
   });
 
 });
